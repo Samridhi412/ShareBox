@@ -3,7 +3,10 @@ import router from './routes/routes.js';
 import cors from 'cors';
 import DBConnection from './database/db.js';
 const app = express();
-app.use(cors());
+const corsoption = {
+    origin: "https://sharex-qwzz.onrender.com"
+}
+app.use(cors(corsoption));
 app.use('/', router);
 const port = 8000;
 DBConnection(); 

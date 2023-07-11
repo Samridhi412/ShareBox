@@ -6,8 +6,8 @@ const app = express();
 const corsoption = {
     origin: "https://sharex-qwzz.onrender.com"
 }
-app.use(cors(corsoption));
-app.use('https://sharex-qwzz.onrender.com', router);
+app.use(cors());
+app.use('/', router);
 const port = 8000;
 DBConnection(); 
 app.listen(port, () => console.log(`Server is running on port ${port}`));

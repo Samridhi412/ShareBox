@@ -6,10 +6,10 @@ import dotenv from 'dotenv';
 dotenv.config();
 const app = express();
 const corsoption = {
-    origin: "https://sharex-frontend.onrender.com"
+    origin: "https://sharex-frontend12.onrender.com"
 }
 app.use(cors(corsoption));
-app.use('https://sharex-backend.onrender.com', router);
+app.use('https://sharex-backend-67b5.onrender.com', router);
 const port = process.env.PORT || 8000;
 DBConnection(); 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
